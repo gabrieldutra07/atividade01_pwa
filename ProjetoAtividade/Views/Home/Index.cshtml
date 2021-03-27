@@ -15,23 +15,26 @@
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text-info">Login</h3>
+                            <h3 class="text-center text-info"><img src="buffet-logo.png" alt="Logo Buffet"/></h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">E-mail:</label><br>
                                 <input type="text" name="username" id="username" class="form-control">
                             </div>
-                            <div class="form-group">
-                                <label for="password" class="text-info">Senha:</label><br>
-                                <input type="text" name="password" id="password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <a asp-area="" asp-controller="Home" asp-action="RecuperarConta"><label for="remember-me" class="text-info"><span>Recuperar conta</span></label><br></a>
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="Entrar">
-                            </div>
-                            <div id="register-link" class="text-right">
-                                 <a asp-area="" asp-controller="Home" asp-action="Registrar">Registre-se</a>
-                            </div>
+                        <div class="form-group">
+                            <label for="password" class="text-info">Senha:</label><br>
+                            <input type="text" name="password" id="password" class="form-control">
+                        </div>
                         </form>
+                        <div class="form-group">
+                            
+                            <a asp-area="" asp-controller="Home" asp-action="RecuperarConta">Recuperar conta<br></a>
+                            <a asp-area="" asp-controller="Interno" asp-action="Entrar"><input type="submit" name="submit" class="btn btn-info btn-md" value="Entrar"></a>
+                        </div>
+                            
+                            <div id="register-link" class="text-right">
+                                 <a asp-area="" asp-controller="Home" asp-action="Registrar">Cadastre-se</a>
+                            </div>
+                        
                     </div>
                 </div>
             </div>

@@ -4,4 +4,12 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="Views\Home\img" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\buffet-logo.png" />
+    </ItemGroup>
+
 </Project>
