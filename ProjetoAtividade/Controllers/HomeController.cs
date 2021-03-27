@@ -20,10 +20,19 @@ namespace ProjetoAtividade.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.InformacaoQualquer = "Informação qualquer";
+
+
             return View();
         }
-
-        public IActionResult Privacy()
+        
+        
+        public IActionResult TermosUso()
+        {
+            return View();
+        }
+        
+        public IActionResult Login()
         {
             return View();
         }
@@ -32,6 +41,18 @@ namespace ProjetoAtividade.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel {RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier});
+        }
+
+        public IActionResult RecuperarConta()
+        {
+            ViewBag.InformacaoQualquer = "Recuperação de conta";
+            
+            return View();
+        }
+
+        public IActionResult Registrar()
+        {
+            return View();
         }
     }
 }
